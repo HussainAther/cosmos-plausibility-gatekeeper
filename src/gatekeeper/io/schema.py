@@ -1,5 +1,5 @@
 from __future__ import annotations
-from typing import List, Optional, Literal, Tuple, Dict, Any
+from typing import List, Optional, Literal
 from pydantic import BaseModel, Field, conlist
 
 Verdict = Literal["OK", "QUESTIONABLE", "IMPLAUSIBLE"]
