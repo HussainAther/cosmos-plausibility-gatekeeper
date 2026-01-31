@@ -1,0 +1,47 @@
+{
+  "clip_id": "clip_01",
+  "plausibility_score": 0.27,
+  "verdict": "IMPLAUSIBLE",
+  "explanation": "Vehicle motion implies an abrupt lateral displacement inconsistent with prior velocity; pedestrian path also shows a discontinuous jump between frames.",
+  "flagged_objects": [
+    {
+      "object_id": "trk_3",
+      "reason": "position jump exceeds max_accel constraint"
+    }
+  ],
+  "evidence": {
+    "checks": [
+      {"name": "max_speed", "passed": true},
+      {"name": "max_accel", "passed": false, "details": "trk_3 accel spike at t=0.20s"}
+    ],
+    "model": {
+      "provider": "cosmos",
+      "model_name": "reason-2",
+      "raw_response": "..."
+    }
+  }
+}
+{
+  "clip_id": "clip_01",
+  "plausibility_score": 0.27,
+  "verdict": "IMPLAUSIBLE",
+  "explanation": "Vehicle motion implies an abrupt lateral displacement inconsistent with prior velocity; pedestrian path also shows a discontinuous jump between frames.",
+  "flagged_objects": [
+    {
+      "object_id": "trk_3",
+      "reason": "position jump exceeds max_accel constraint"
+    }
+  ],
+  "evidence": {
+    "checks": [
+      {"name": "max_speed", "passed": true},
+      {"name": "max_accel", "passed": false, "details": "trk_3 accel spike at t=0.20s"}
+    ],
+    "model": {
+      "provider": "cosmos",
+      "model_name": "reason-2",
+      "raw_response": "..."
+    }
+  }
+}
+
