@@ -1,0 +1,10 @@
+Metadata-Version: 2.4
+Name: cosmos-plausibility-gatekeeper
+Version: 0.1.0
+Summary: Physical plausibility gatekeeper for autonomous vision outputs
+Requires-Python: >=3.9
+Requires-Dist: pydantic>=2.6
+Requires-Dist: numpy>=1.23
+Requires-Dist: requests>=2.31
+Provides-Extra: viz
+Requires-Dist: opencv-python>=4.8; extra == "viz"

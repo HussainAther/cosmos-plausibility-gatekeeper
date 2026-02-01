@@ -1,15 +1,20 @@
 {
-  "clip_id": "clip_01",
-  "plausibility_score": 1.0,
-  "verdict": "OK",
+  "clip_id": "clip_02",
+  "plausibility_score": 0.65,
+  "verdict": "QUESTIONABLE",
   "explanation": "Heuristic checks applied (speed/accel/jump). Model reasoning unavailable or skipped.",
-  "flagged_objects": [],
+  "flagged_objects": [
+    {
+      "object_id": "trk_3",
+      "reason": "[heuristic] speed 2121.2 px/s > 900.0"
+    }
+  ],
   "evidence": {
     "checks": [
       {
         "name": "heuristics_score",
         "passed": true,
-        "details": "1.000"
+        "details": "0.650"
       },
       {
         "name": "combine_method",

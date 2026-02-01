@@ -1,0 +1,23 @@
+[project]
+name = "cosmos-plausibility-gatekeeper"
+version = "0.1.0"
+description = "Physical plausibility gatekeeper for autonomous vision outputs"
+requires-python = ">=3.9"
+dependencies = [
+  "pydantic>=2.6",
+  "numpy>=1.23",
+  "requests>=2.31",
+]
+
+[project.optional-dependencies]
+viz = ["opencv-python>=4.8"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
