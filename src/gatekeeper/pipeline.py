@@ -89,7 +89,8 @@ def run_gatekeeper(
     checks = [
         CheckResult(name="heuristics_score", passed=True, details=f"{h_score:.3f}"),
         CheckResult(name="combine_method", passed=True, details=method),
-        CheckResult(name="cosmos_status", passed=(cosmos_resp.status == "ok"), details=cosmos_resp.status),
+        CheckResult(name="cosmos_status", passed=(cosmos_resp.status in ("ok", "skipped")), details=cosmos_resp.status,
+)
     ]
 
     evidence = Evidence(
