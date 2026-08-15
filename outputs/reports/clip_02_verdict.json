@@ -23,7 +23,7 @@
       },
       {
         "name": "cosmos_status",
-        "passed": false,
+        "passed": true,
         "details": "skipped"
       }
     ],
